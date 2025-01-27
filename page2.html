@@ -52,6 +52,29 @@
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
+
+      /* Styling for the next page link */
+      .next-page-link {
+        display: inline-block;
+        padding: 15px 30px;
+        margin-top: 30px;
+        font-size: 1.2em;
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .next-page-link:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px);
+      }
+
+      .next-page-link:active {
+        transform: translateY(1px);
+      }
     </style>
   </head>
   <body>
@@ -69,27 +92,9 @@
 
     <!-- Embedded YouTube Video -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/F020aNi0wS0?si=lI75kXdCMkmV_FSG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   .next-page-link {
-  display: inline-block;
-  padding: 15px 30px;
-  margin-top: 30px;
-  font-size: 1.2em;
-  background-color: #007bff;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s, transform 0.3s;
-}
 
-.next-page-link:hover {
-  background-color: #0056b3;
-  transform: translateY(-3px);
-}
-
-.next-page-link:active {
-  transform: translateY(1px);
-}
+    <!-- Add link to the next page with the .next-page-link class -->
+    <a href="page2.html" class="next-page-link">Go to the next page</a>
 
   </body>
 </html>
