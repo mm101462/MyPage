@@ -5,100 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Captain America - Marvel Heroes</title>
   <style>
-    /* Include the same styles as the homepage for consistency */
     body {
-      background: linear-gradient(to right, #2a3d52, #3b4b9c);
-      color: white;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
-    }
-    h1 {
+      background-color: #2a3d52;
+      color: white;
       text-align: center;
-      padding: 40px 20px;
-      font-size: 3rem;
-      margin-top: 40px;
-      color: #fff;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-family: 'Helvetica', sans-serif;
-      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-    }
-    p {
-      margin: 20px auto;
-      line-height: 1.8;
-      font-size: 1.2rem;
-      max-width: 800px;
-      padding: 0 20px;
-      color: #e4e4e4;
-    }
-    img {
-      display: block;
-      margin: 30px auto;
-      border-radius: 10px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-      max-width: 100%;
-      height: auto;
-      transition: transform 0.3s ease-in-out;
-    }
-    img:hover {
-      transform: scale(1.05);
-    }
-    .button-container {
+      height: 100vh;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-image {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
       margin-top: 20px;
     }
-    .small-button {
-      padding: 10px 20px;
-      font-size: 1rem;
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .hero-button {
       background-color: #007bff;
-      color: #fff;
-      text-align: center;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2rem;
       text-decoration: none;
       border-radius: 5px;
-      transition: background-color 0.3s, transform 0.3s ease;
+      margin: 10px;
+      text-transform: uppercase;
     }
-    .small-button:hover {
+
+    .hero-button:hover {
       background-color: #0056b3;
-      transform: translateY(-3px);
-    }
-    .small-button:active {
-      transform: translateY(1px);
-    }
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2.2rem;
-      }
-      p {
-        font-size: 1rem;
-        padding: 0 10px;
-      }
-      .button-container {
-        flex-direction: column;
-        align-items: center;
-      }
     }
   </style>
 </head>
 <body>
-
   <h1>Captain America</h1>
-
-  <p>Here is the story of Captain America, the first Avenger...</p>
-
-  <!-- Captain America Image -->
-  <img src="https://cdn.marvel.com/content/1x/003cap_ons_cut_dsk_01_1.jpg" alt="Captain America standing heroically in his uniform" />
-
-  <!-- Button Container for Navigation -->
+  <p>The Super Soldier who fights for freedom and justice.</p>
+  <img class="hero-image" src="https://example.com/captain_america_image.jpg" alt="Captain America in action">
   <div class="button-container">
-    <a href="index.html" class="small-button">Home</a>
-    <a href="iron_man.html" class="small-button">Iron Man</a>
-    <a href="thor.html" class="small-button">Thor</a>
+    <a href="index.html" class="hero-button">Back to Home</a>
+    <a href="iron_man.html" class="hero-button">Iron Man</a>
+    <a href="thor.html" class="hero-button">Thor</a>
   </div>
-
 </body>
 </html>
-
