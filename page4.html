@@ -5,24 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thor - Marvel Heroes</title>
   <style>
-    <!-- Same styling as above -->
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2b3a4f;
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-image {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .hero-button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 10px;
+      text-transform: uppercase;
+    }
+
+    .hero-button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
-
   <h1>Thor</h1>
-
-  <p>Thor, the God of Thunder, hails from Asgard. Follow his epic journey...</p>
-
-  <!-- Thor Image -->
-  <img src="https://example.com/thor.jpg" alt="Thor with hammer" />
-
-  <!-- Button Container for Navigation -->
+  <p>The God of Thunder, wielding the mighty Mjolnir to protect the realms.</p>
+  <img class="hero-image" src="https://example.com/thor_image.jpg" alt="Thor with hammer">
   <div class="button-container">
-    <a href="index.html" class="small-button">Home</a>
-    <a href="captain_america.html" class="small-button">Captain America</a>
-    <a href="iron_man.html" class="small-button">Iron Man</a>
+    <a href="index.html" class="hero-button">Back to Home</a>
+    <a href="captain_america.html" class="hero-button">Captain America</a>
+    <a href="iron_man.html" class="hero-button">Iron Man</a>
   </div>
-
 </body>
 </html>
