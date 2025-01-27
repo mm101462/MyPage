@@ -1,49 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Invincible Iron-Man</title>
     <style>
-      /* Optional: You can add custom styles here for better layout */
+      /* Global Styles */
       body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f9; /* Light background color for the page */
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      /* Centered Container */
+      .container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Heading Styles */
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+        color: #1e2a47;
+        margin-bottom: 30px;
+      }
+
+      /* Paragraph Styles */
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+
+      /* Image Styles */
+      img {
+        display: block;
+        margin: 30px auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      /* YouTube Video Styling */
+      iframe {
+        display: block;
+        margin: 30px auto;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Styling for the Next Page Link */
+      .next-page-link {
+        display: inline-block;
+        padding: 15px 30px;
+        margin-top: 40px;
+        font-size: 1.2rem;
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .next-page-link:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px);
+      }
+
+      .next-page-link:active {
+        transform: translateY(1px);
       }
     </style>
   </head>
   <body>
-    <h1>Iron-Man Origin Story</h1>
-    <p>Once there was a wealthy billionaire named Tony Stark, known for designing advanced weapons. One day, while showcasing his latest creations to military officials, he was kidnapped by a terrorist group. They forced him to build a powerful missile in a hidden cave. However, Tony had other ideas. Using his brilliant mind and limited resources, he secretly built a suit of high-tech armor instead. The suit helped him escape from his captors, and once free, he began refining his designs, eventually creating even more advanced suits of armor to protect the world.</p>
+    <div class="container">
+      <h1>Iron-Man Origin Story</h1>
+      <p>
+        Once there was a wealthy billionaire named Tony Stark, known for designing advanced weapons. One day, while showcasing his latest creations to military officials, he was kidnapped by a terrorist group. They forced him to build a powerful missile in a hidden cave. However, Tony had other ideas. Using his brilliant mind and limited resources, he secretly built a suit of high-tech armor instead. The suit helped him escape from his captors, and once free, he began refining his designs, eventually creating even more advanced suits of armor to protect the world.
+      </p>
 
-    <img src="https://preview.redd.it/which-version-of-ironman-is-better-comics-or-mcu-v0-dvdgx4lnrhcd1.jpg?width=683&format=pjpg&auto=webp&s=bdd7390d9a22dda332864434d926b65e5fc761ed" alt="Iron Man" />
+      <img src="https://preview.redd.it/which-version-of-ironman-is-better-comics-or-mcu-v0-dvdgx4lnrhcd1.jpg?width=683&format=pjpg&auto=webp&s=bdd7390d9a22dda332864434d926b65e5fc761ed" alt="Iron Man" />
 
-    <!-- Enlarged video -->
-    <iframe width="800" height="450" src="https://www.youtube.com/embed/JOZybcjlGO4?si=S3XkjMtiudhblAyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <br>
+      <!-- Enlarged video -->
+      <iframe width="800" height="450" src="https://www.youtube.com/embed/JOZybcjlGO4?si=S3XkjMtiudhblAyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-.next-page-link {
-  display: inline-block;
-  padding: 15px 30px;
-  margin-top: 30px;
-  font-size: 1.2em;
-  background-color: #007bff;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.next-page-link:hover {
-  background-color: #0056b3;
-  transform: translateY(-3px);
-}
-
-.next-page-link:active {
-  transform: translateY(1px);
-}
-
+      <!-- Next page link -->
+      <a href="page2.html" class="next-page-link">Go to the Next Page</a>
+    </div>
   </body>
 </html>
+
 
 
