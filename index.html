@@ -5,155 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marvel Heroes</title>
   <style>
-    /* General Body Styling */
     body {
-      background: linear-gradient(to right, #2a3d52, #3b4b9c); /* Dark blue to light blue gradient */
-      color: white;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
-    }
-
-    /* Main Heading Styling */
-    h1 {
       text-align: center;
-      padding: 40px 20px;
-      font-size: 3rem;
-      margin-top: 40px;
-      color: #fff;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-family: 'Helvetica', sans-serif;
-      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-    }
-
-    /* Paragraph Styling */
-    p {
-      margin: 20px auto;
-      line-height: 1.8;
-      font-size: 1.2rem;
-      max-width: 800px;
-      padding: 0 20px;
-      color: #e4e4e4;
-    }
-
-    /* Image Styling */
-    img {
-      display: block;
-      margin: 30px auto;
-      border-radius: 10px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-      max-width: 100%;
-      height: auto;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    img:hover {
-      transform: scale(1.05);
-    }
-
-    /* Button Container Styling */
-    .button-container {
+      background-color: #333;
+      color: white;
+      height: 100vh;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .button-container {
       margin-top: 20px;
     }
 
-    /* Smaller Button Styling */
-    .small-button {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 1rem;
+    .hero-button {
       background-color: #007bff;
-      color: #fff;
-      text-align: center;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 1.5rem;
       text-decoration: none;
       border-radius: 5px;
-      transition: background-color 0.3s, transform 0.3s ease;
+      text-transform: uppercase;
     }
 
-    .small-button:hover {
+    .hero-button:hover {
       background-color: #0056b3;
-      transform: translateY(-3px);
-    }
-
-    .small-button:active {
-      transform: translateY(1px);
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2.2rem;
-      }
-
-      p {
-        font-size: 1rem;
-        padding: 0 10px;
-      }
-
-      img {
-        height: auto;
-      }
-
-      .button-container {
-        flex-direction: column;
-        align-items: center;
-      }
     }
   </style>
 </head>
 <body>
-
-  <!-- Home Page Section -->
-  <div id="home">
-    <h1>Marvel Heroes</h1>
-    <p>Welcome to the world of Marvel! Explore the stories of your favorite heroes:</p>
-    <img src="https://example.com/marvel-heroes.jpg" alt="Marvel Heroes">
-    <div class="button-container">
-      <a href="#captain-america" class="small-button">Captain America</a>
-      <a href="#iron-man" class="small-button">Iron Man</a>
-      <a href="#thor" class="small-button">Thor</a>
-    </div>
+  <h1>Marvel Heroes</h1>
+  <p>Click on a hero to visit their page:</p>
+  <div class="button-container">
+    <a href="captain_america.html" class="hero-button">Captain America</a>
+    <a href="iron_man.html" class="hero-button">Iron Man</a>
+    <a href="thor.html" class="hero-button">Thor</a>
   </div>
-
-  <!-- Captain America Section -->
-  <div id="captain-america">
-    <h1>Captain America</h1>
-    <p>Here is the story of Captain America, the first Avenger...</p>
-    <img src="https://cdn.marvel.com/content/1x/003cap_ons_cut_dsk_01_1.jpg" alt="Captain America standing heroically in his uniform">
-    <div class="button-container">
-      <a href="#home" class="small-button">Home</a>
-      <a href="#iron-man" class="small-button">Iron Man</a>
-      <a href="#thor" class="small-button">Thor</a>
-    </div>
-  </div>
-
-  <!-- Iron Man Section -->
-  <div id="iron-man">
-    <h1>Iron Man</h1>
-    <p>The story of Tony Stark, a genius billionaire playboy philanthropist who built the Iron Man suit...</p>
-    <img src="https://example.com/ironman.jpg" alt="Iron Man in suit">
-    <div class="button-container">
-      <a href="#home" class="small-button">Home</a>
-      <a href="#captain-america" class="small-button">Captain America</a>
-      <a href="#thor" class="small-button">Thor</a>
-    </div>
-  </div>
-
-  <!-- Thor Section -->
-  <div id="thor">
-    <h1>Thor</h1>
-    <p>Thor, the God of Thunder, hails from Asgard. Follow his epic journey...</p>
-    <img src="https://example.com/thor.jpg" alt="Thor with hammer">
-    <div class="button-container">
-      <a href="#home" class="small-button">Home</a>
-      <a href="#captain-america" class="small-button">Captain America</a>
-      <a href="#iron-man" class="small-button">Iron Man</a>
-    </div>
-  </div>
-
 </body>
 </html>
