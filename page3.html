@@ -5,24 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iron Man - Marvel Heroes</title>
   <style>
-    <!-- Same styling as above -->
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-image {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .hero-button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 10px;
+      text-transform: uppercase;
+    }
+
+    .hero-button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
-
   <h1>Iron Man</h1>
-
-  <p>The story of Tony Stark, a genius billionaire playboy philanthropist who built the Iron Man suit...</p>
-
-  <!-- Iron Man Image -->
-  <img src="https://example.com/ironman.jpg" alt="Iron Man in suit" />
-
-  <!-- Button Container for Navigation -->
+  <p>The Genius Billionaire, who made the Iron Man suit to protect the world.</p>
+  <img class="hero-image" src="https://example.com/iron_man_image.jpg" alt="Iron Man flying">
   <div class="button-container">
-    <a href="index.html" class="small-button">Home</a>
-    <a href="captain_america.html" class="small-button">Captain America</a>
-    <a href="thor.html" class="small-button">Thor</a>
+    <a href="index.html" class="hero-button">Back to Home</a>
+    <a href="captain_america.html" class="hero-button">Captain America</a>
+    <a href="thor.html" class="hero-button">Thor</a>
   </div>
-
 </body>
 </html>
