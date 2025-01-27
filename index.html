@@ -1,83 +1,113 @@
-/* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Website</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #2a3d52;  /* Background color remains unchanged */
-    color: #f4f4f4;  /* Light text color */
-    padding: 20px;
-}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2a3d52;  /* Background color remains unchanged */
+            color: #f4f4f4;  /* Light text color */
+            padding: 20px;
+        }
 
-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-h1 {
-    font-size: 3rem;
-    color: #fff;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
+        h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 40px;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
 
-nav a.button {
-    text-decoration: none;
-    background-color: #ff5e57;  /* Vibrant red for attention-grabbing buttons */
-    padding: 12px 30px;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    display: inline-block;
-    transition: all 0.3s ease-in-out;
-    border: 2px solid transparent;
-}
+        nav a.button {
+            text-decoration: none;
+            background-color: #ff5e57;  /* Vibrant red for attention-grabbing buttons */
+            padding: 12px 30px;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+            border: 2px solid transparent;
+        }
 
-nav a.button:hover {
-    background-color: #ff3b2f;  /* Darker red on hover */
-    transform: scale(1.05);  /* Slightly enlarges button on hover */
-    border-color: #fff;  /* Border appears on hover */
-}
+        nav a.button:hover {
+            background-color: #ff3b2f;  /* Darker red on hover */
+            transform: scale(1.05);  /* Slightly enlarges button on hover */
+            border-color: #fff;  /* Border appears on hover */
+        }
 
-nav a.button:active {
-    background-color: #ff2a1a;  /* Even darker red on active click */
-    transform: scale(1);  /* Slightly shrinks back on click */
-}
+        nav a.button:active {
+            background-color: #ff2a1a;  /* Even darker red on active click */
+            transform: scale(1);  /* Slightly shrinks back on click */
+        }
 
-.main-content {
-    text-align: center;
-    color: #f4f4f4;
-    margin: 50px 0;
-}
+        .main-content {
+            text-align: center;
+            color: #f4f4f4;
+            margin: 50px 0;
+        }
 
-.main-content h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
+        .main-content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
 
-.main-content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
+        .main-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
 
-footer {
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 50px;
-    color: #bbb;
-}
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 50px;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Superhero Website</h1>
+        <nav>
+            <ul>
+                <li><a href="thor-page.html" class="button">Thor</a></li>
+                <li><a href="ironman-page.html" class="button">Iron Man</a></li>
+                <li><a href="captainamerica-page.html" class="button">Captain America</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="main-content">
+        <h2>Explore Your Favorite Superheroes</h2>
+        <p>Click on the buttons above to explore more about your favorite superheroes!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Superhero Website | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
