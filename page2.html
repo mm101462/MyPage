@@ -53,11 +53,18 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
 
+      /* Container for links */
+      .links-container {
+        display: flex;
+        justify-content: center; /* Center links horizontally */
+        gap: 20px; /* Space between the links */
+        margin-top: 30px;
+      }
+
       /* Styling for the next page link */
       .next-page-link {
         display: inline-block;
         padding: 15px 30px;
-        margin-top: 30px;
         font-size: 1.2em;
         background-color: #007bff;
         color: #fff;
@@ -80,7 +87,6 @@
       .my-page-link {
         display: inline-block;
         padding: 15px 30px;
-        margin-top: 20px;
         font-size: 1.2em;
         background-color: #28a745; /* Green background */
         color: #fff;
@@ -116,12 +122,17 @@
     <!-- Embedded YouTube Video -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/F020aNi0wS0?si=lI75kXdCMkmV_FSG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <!-- Add link to the next page with the .next-page-link class -->
-    <a href="page3.html" class="next-page-link">Go to the next page</a>
+    <!-- Container for links -->
+    <div class="links-container">
+      <!-- Add link to the next page with the .next-page-link class -->
+      <a href="page3.html" class="next-page-link">Go to the next page</a>
 
-    <!-- Add link to the external page -->
-    <a href="https://mm101462.github.io/MyPage/" class="my-page-link" target="_blank">Visit My Page</a>
+      <!-- Add link to the external page -->
+      <a href="https://mm101462.github.io/MyPage/" class="my-page-link" target="_blank">Visit My Page</a>
+    </div>
+
   </body>
 </html>
+
 
 
