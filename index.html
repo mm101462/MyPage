@@ -7,7 +7,7 @@
   <style>
     /* General Body Styling */
     body {
-      background-color: #7e2ff7;
+      background-color: #7e2ff7; /* Restoring the original background color */
       font-family: Arial, sans-serif;
       color: white;
       margin: 0;
@@ -66,6 +66,7 @@
       font-weight: bold;
       display: inline-block;
       margin-top: 20px;
+      text-align: center;
     }
 
     a:hover {
@@ -81,18 +82,27 @@
     }
 
     .social-links a {
-      padding: 10px 20px;
-      background-color: #ecf0f1;
-      color: #2980b9;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 18px;
-      transition: background-color 0.3s, color 0.3s;
+      width: 60px;
+      height: 60px;
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      transition: transform 0.3s, opacity 0.3s;
     }
 
     .social-links a:hover {
-      background-color: #2980b9;
-      color: #ecf0f1;
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+
+    .youtube-link {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png');
+    }
+
+    .tiktok-link {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/69/TikTok_logo_2021.svg');
     }
 
     /* Responsive Styling */
@@ -183,10 +193,10 @@
     </div>
   </section>
 
-  <!-- Social Media Links -->
+  <!-- Social Media Links with Icons -->
   <div class="social-links">
-    <a href="https://www.youtube.com/@EnteringYT" target="_blank">YouTube</a>
-    <a href="https://www.tiktok.com/@momatchett" target="_blank">TikTok</a>
+    <a href="https://www.youtube.com/@EnteringYT" target="_blank" class="youtube-link" title="Visit my YouTube channel"></a>
+    <a href="https://www.tiktok.com/@momatchett" target="_blank" class="tiktok-link" title="Follow me on TikTok"></a>
   </div>
 
 </body>
