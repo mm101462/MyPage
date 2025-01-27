@@ -89,6 +89,34 @@
       transform: translateY(2px); /* Press down effect */
     }
 
+    /* New Link to External Page Styling */
+    .my-page-link {
+      display: inline-block;
+      background-color: #28a745; /* Green background */
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      font-size: 1.1em;
+      margin-top: 20px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Hover Effects for My Page Button */
+    .my-page-link:hover {
+      background-color: #218838; /* Darker green on hover */
+      transform: translateY(-4px); /* Lift button on hover */
+    }
+
+    /* Active Button Effect */
+    .my-page-link:active {
+      transform: translateY(2px); /* Press down effect */
+    }
+
     /* Responsive Design for Smaller Screens */
     @media (max-width: 768px) {
       body {
@@ -108,7 +136,8 @@
         height: 300px; /* Reduce video height on smaller screens */
       }
 
-      .next-page-link {
+      .next-page-link,
+      .my-page-link {
         padding: 12px 25px;
         font-size: 1em;
       }
@@ -129,6 +158,9 @@
 
     <!-- Next page link -->
     <a href="page4.html" class="next-page-link">Go to the Next Page</a>
+
+    <!-- New link to MyPage -->
+    <a href="https://mm101462.github.io/MyPage/" class="my-page-link" target="_blank">Visit My Page</a>
   </div>
 </body>
 </html>
