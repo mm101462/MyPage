@@ -73,6 +73,29 @@
     a:active {
       transform: translateY(1px);
     }
+
+    /* New Link to My Page Styling */
+    .my-page-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.2em;
+      background-color: #28a745; /* Green background */
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .my-page-link:hover {
+      background-color: #218838; /* Darker green on hover */
+      transform: translateY(-3px); /* Lift button on hover */
+    }
+
+    .my-page-link:active {
+      transform: translateY(1px); /* Press down effect */
+    }
   </style>
 </head>
 <body>
@@ -89,6 +112,8 @@
 
   <a href="page2.html">Go to the next page</a>
 
+  <!-- New link to MyPage -->
+  <a href="https://mm101462.github.io/MyPage/" class="my-page-link" target="_blank">Visit My Page</a>
+
 </body>
 </html>
-
