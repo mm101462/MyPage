@@ -75,6 +75,29 @@
       .next-page-link:active {
         transform: translateY(1px);
       }
+
+      /* Styling for the new link to MyPage */
+      .my-page-link {
+        display: inline-block;
+        padding: 15px 30px;
+        margin-top: 20px;
+        font-size: 1.2em;
+        background-color: #28a745; /* Green background */
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .my-page-link:hover {
+        background-color: #218838; /* Darker green on hover */
+        transform: translateY(-3px);
+      }
+
+      .my-page-link:active {
+        transform: translateY(1px);
+      }
     </style>
   </head>
   <body>
@@ -96,6 +119,9 @@
     <!-- Add link to the next page with the .next-page-link class -->
     <a href="page3.html" class="next-page-link">Go to the next page</a>
 
+    <!-- Add link to the external page -->
+    <a href="https://mm101462.github.io/MyPage/" class="my-page-link" target="_blank">Visit My Page</a>
   </body>
 </html>
+
 
